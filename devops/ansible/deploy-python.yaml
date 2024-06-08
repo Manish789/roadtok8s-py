@@ -54,7 +54,7 @@
     - name: Enable nginx site
       command: ln -s /etc/nginx/sites-available/roadtok8s-py /etc/nginx/sites-enabled
       args:
-        creates: /etc/nginx/sites-avaiable/roadtok8s-py
+        creates: /etc/nginx/sites-available/roadtok8s-py
     - name: Remove default nginx site
       file:
         path: "{{ item }}"
