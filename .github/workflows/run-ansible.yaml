@@ -47,10 +47,10 @@ jobs:
       working-directory: ./devops/ansible
       run: |
         ansible all -m ping
-    - name: Run Ansible Playbook
-      working-directory: ./devops/ansible
-      run: |
-        ansible-playbook install-nginx.yaml
+    #- name: Run Ansible Playbook
+    #  working-directory: ./devops/ansible
+    #  run: |
+    #   ansible-playbook install-nginx.yaml
     - name: Deploy Python via Ansible
       working-directory: ./devops/ansible
       run: |
