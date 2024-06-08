@@ -33,7 +33,7 @@
         - /var/log/supervisor/roadtok8s/py
     - name: Copy FastAPI app to remote server
       synchronize:
-          src: '{{ playbook_dir }}/../../src'
+          src: '{{ playbook_dir }}/../../src/'
           dest: /opt/projects/roadtok8s/py/src
           recursive: yes
           delete: yes
